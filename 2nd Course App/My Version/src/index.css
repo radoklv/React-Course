@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+ul, li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.wrapper {
+  background-color: rgb(114, 114, 114);
+  padding: 15px;
+  border-radius: 20px;
+}
+.app{
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+/*********************************************************
+                          Form
+**********************************************************/
+.form_control{
+  background-color: #4C0B56;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.form_control label{
+  display: flex;
+  font-weight: 600;
+  color: #fff;
+}
+
+.form_control input{
+  width: 100%;
+}
+
+.form_btn{
+  width: 100%;
+}
+
+
+/*********************************************************
+                          List Item          
+**********************************************************/
+
+.list_item {
+  margin-bottom: 15px;
+}
+
+.list_item p{
+  background-color: #fff;
+  margin: 0;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+/*********************************************************
+                          Modal        
+**********************************************************/
+
+.modal_backdrop{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1b1b1b98;
+  z-index: 50;
+}
+
+.modal_content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  z-index: 99999;
+  border-radius: 20px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.modal_content p{
+  font-size: 20px;
+}
+
+.modal_head{
+  background-color: #4C0B56;
+  padding: 15px;
+  color: #fff;
+}
+
+.modal_body{
+  text-align: center;
+  padding: 15px;
+}

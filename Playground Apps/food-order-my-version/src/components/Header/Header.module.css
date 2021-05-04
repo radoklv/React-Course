@@ -1,0 +1,19 @@
+.header {
+  background-color: #7f2607;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100vw;
+  z-index: 500;
+}
+
+.header > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+}

@@ -1,0 +1,49 @@
+.app-intro{
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.app-intro:before{
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    transform: rotate(-5deg);
+    height: 150px;
+    width: 120vw;
+    background-color: #262526;
+    z-index: 10c;
+}
+
+
+.app-intro-image{
+    background-image: url('./assets/images/table.jpeg');
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.app-body{
+    margin-top: -150px;
+    background-color: #262526;
+}
+.app-body-intro {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 100;
+    background-color: #323132;
+    padding: 15px;
+    text-align: justify;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.app-body-intro h1{
+    text-align: center;
+}
+
+
