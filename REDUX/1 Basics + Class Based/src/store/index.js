@@ -1,4 +1,4 @@
-import { createStore, dispatch } from 'redux';
+import { createStore } from 'redux';
 
 const INITIAL_STATE = {
   counter: 0,

@@ -10,13 +10,13 @@ class Users extends Component {
     this.state = {
       showUsers: true,
       // moreState: 'Test',
-      // nestedObj: {},
+      // nestedObj: {},npm start
       // arrays: [],
     };
   }
 
   toggleUsersHandler() {
-    this.setState({ showUsers: false }); // Така се променя стейт
+    this.setState({ showUsers: !this.state.showUsers }); // Така се променя стейт
 
     // this.setState((curState => { // Също валиден синтаксис
     //   return {showUsers: !curState.showUsers}

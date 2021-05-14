@@ -15,12 +15,12 @@ class UserFinder extends Component {
     };
   }
 
-  componentDidMount() {
+  componentDidMount() { // === useEffct(..., [])
     // Send http request...
     this.setState({ filteredUsers: this.context.users });
-  }
+  } 
 
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate(prevProps, prevState) { // === useEffct(..., [with dependencies])
     if (prevState.searchTerm !== this.state.searchTerm) {
       this.setState({
         filteredUsers: this.context.users.filter((user) =>
@@ -29,6 +29,8 @@ class UserFinder extends Component {
       });
     }
   }
+
+  //componentWillUnmount() // === useEffect(()=>{ return ()=>{...}}, [])
 
   searchChangeHandler(event) {
     this.setState({ searchTerm: event.target.value });
